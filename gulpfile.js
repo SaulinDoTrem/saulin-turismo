@@ -18,7 +18,7 @@ const paths = {
         all: "src/scripts/**/*.js",
         main: "src/scripts/app.js",
     },
-    output: "./",
+    output: "docs",
 };
 
 function server() {
