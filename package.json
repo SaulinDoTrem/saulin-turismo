@@ -1,17 +1,16 @@
 {
-    "name": "practice-time-shopping-list-saulo-klein-nery",
+    "name": "saulin-turismo",
     "version": "1.0.0",
-    "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+    "description": "Site de turismo sobre o México",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "gulp"
     },
     "repository": {
         "type": "git",
-        "url": "ssh://git@gitea.ecommercetools.com.br:22022/SauloKleinNery/practice-time-shopping-list-saulo-klein-nery.git"
+        "url": "ssh://git@github.com:SaulinDoTrem/saulin-turismo.git"
     },
-    "author": "",
+    "author": "Saulo Klein Nery",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.20.2",
@@ -20,6 +19,7 @@
         "browserify": "^17.0.0",
         "gulp": "^4.0.2",
         "gulp-connect": "^5.7.0",
+        "gulp-imagemin": "^7.1.0",
         "gulp-sass": "^5.1.0",
         "gulp-uglify": "^3.0.2",
         "sass": "^1.56.1",
