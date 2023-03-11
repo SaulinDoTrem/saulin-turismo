@@ -4,24 +4,175 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7091/7091514.png" />
 
-        <title>Document</title>
+        <title>Saulin Turismo</title>
 
         <link rel="stylesheet" href="./main.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
-        <header>
-            <div>
-                <span>Saulin-Turismo</span>
-                <img src="./assets/icons/jalapeno-icon.png" alt="Ícone de Jalapeño" />
-            </div>
+        <header class="header-page">
+            <div class="header-wrapper">
+                <div class="header-wrapper__page-info">
+                    <div class="header-wrapper__menu-mobile"></div>
 
-            <img src="./assets/icons/mexico-icon.png" alt="Ícone da Bandeira do México" />
+                    <div class="header-wrapper__info">
+                        <span>Saulin-Turismo</span>
+                        <img
+                            class="header-wrapper__jalapeno-icon"
+                            src="./assets/icons/jalapeno-icon.png"
+                            alt="Ícone de Jalapeño"
+                        />
+                    </div>
+
+                    <img
+                        class="header-wrapper__mexico-icon"
+                        src="./assets/icons/mexico-icon.png"
+                        alt="Ícone da Bandeira do México"
+                    />
+                </div>
+
+                <div class="header-wrapper__divider"></div>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#"> HOME </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#"> CULTURA </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#"> ECONOMIA </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#"> GASTRONOMIA </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#"> PONTOS TURÍSTICOS </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <footer>
-            <a href="https://www.flaticon.com/br/icones-gratis/bandeiras" title="bandeiras ícones"
+        <main>
+            <img
+                class="main-banner"
+                src="https://cdn.pixabay.com/photo/2016/02/29/06/43/cancun-1228131_960_720.jpg"
+                alt="Praia de Cancun"
+            />
+
+            <section class="main-content">
+                <h2 class="main-content__subtitle">SAULIN ENTERPRISES APRESENTA</h2>
+                <h1 class="main-content__title">BEM VINDO AO MÉXICO</h1>
+                <p class="main-content__paragraph">
+                    O México é um país localizado na América do Norte, com uma história e cultura
+                    ricas e diversificadas. Sua localização geográfica proporciona uma mistura única
+                    de influências culturais, com traços de civilizações antigas, como os Maias e os
+                    Astecas, bem como influências coloniais espanholas. O México é conhecido
+                    mundialmente por sua culinária saborosa, música vibrante, arte popular colorida
+                    e belas paisagens naturais.
+                </p>
+
+                <!-- <div>
+                    <figure>
+                        <img
+                            src="https://images.pexels.com/photos/3290068/pexels-photo-3290068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Pirâmide Indígena"
+                        />
+
+                        <figcaption>
+                            A história do México remonta a civilizações antigas, como os Maias e os
+                            Astecas, que deixaram um legado de arte e arquitetura impressionantes
+                            que podem ser vistos em locais como as ruínas de Teotihuacán e Chichén
+                            Itzá.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Comida Mexicana"
+                        />
+
+                        <figcaption>
+                            A comida mexicana é uma das mais populares em todo o mundo, e é
+                            conhecida por seus sabores intensos e variados. Pratos como tacos,
+                            enchiladas, guacamole e nachos são conhecidos internacionalmente, mas a
+                            culinária mexicana é muito mais do que isso, com pratos regionais que
+                            variam de acordo com a localização e a história de cada região.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="https://images.pexels.com/photos/12046302/pexels-photo-12046302.jpeg"
+                            alt="Paisagem de uma Montanha no México"
+                        />
+
+                        <figcaption>
+                            Além disso, o México é um destino turístico popular, com belas praias,
+                            montanhas majestosas, desertos impressionantes e cidades vibrantes como
+                            a Cidade do México e Guadalajara. O país tem muito a oferecer aos
+                            visitantes, desde experiências culturais únicas até aventuras ao ar
+                            livre.
+                        </figcaption>
+                    </figure>
+                </div> -->
+            </section>
+        </main>
+
+        <footer class="footer-page">
+            <ul class="footer-page__social-media">
+                <li>
+                    <a href="https://www.youtube.com/channel/UC89HnXMfoh9GtUkPxd53Ydw">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M22.98 5.33168C22.329 4.17547 21.6225 3.9628 20.184 3.88193C18.747 3.78458 15.1335 3.74414 12.003 3.74414C8.8665 3.74414 5.2515 3.78458 3.816 3.88043C2.3805 3.9628 1.6725 4.17397 1.0155 5.33168C0.345 6.48639 0 8.47531 0 11.9769C0 11.9799 0 11.9814 0 11.9814C0 11.9844 0 11.9859 0 11.9859V11.9889C0 15.4755 0.345 17.4794 1.0155 18.6221C1.6725 19.7783 2.379 19.988 3.8145 20.0853C5.2515 20.1692 8.8665 20.2186 12.003 20.2186C15.1335 20.2186 18.747 20.1692 20.1855 20.0868C21.624 19.9895 22.3305 19.7798 22.9815 18.6236C23.658 17.4809 24 15.477 24 11.9904C24 11.9904 24 11.9859 24 11.9829C24 11.9829 24 11.9799 24 11.9784C24 8.47531 23.658 6.48639 22.98 5.33168ZM9 16.4744V7.48834L16.5 11.9814L9 16.4744Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/saulin.klein/">
+                        <svg
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M17.3766 0H6.62295C2.97106 0 0 3.09021 0 6.88838V18.0728C0 21.8711 2.97106 24.9612 6.62295 24.9612H17.3766C21.0288 24.9612 23.9999 21.871 23.9999 18.0728V6.88838C24 3.09021 21.0288 0 17.3766 0ZM21.8706 18.0728C21.8706 20.6499 19.8547 22.7465 17.3768 22.7465H6.62295C4.1452 22.7466 2.12938 20.6499 2.12938 18.0728V6.88838C2.12938 4.31138 4.1452 2.21468 6.62295 2.21468H17.3766C19.8545 2.21468 21.8705 4.31138 21.8705 6.88838V18.0728H21.8706Z"
+                                fill="white"
+                            />
+                            <path
+                                d="M11.9999 6.04907C8.58992 6.04907 5.81576 8.93435 5.81576 12.4809C5.81576 16.0274 8.58992 18.9125 11.9999 18.9125C15.4099 18.9125 18.1841 16.0274 18.1841 12.4809C18.1841 8.93435 15.4099 6.04907 11.9999 6.04907ZM11.9999 16.6977C9.7642 16.6977 7.94514 14.806 7.94514 12.4808C7.94514 10.1554 9.76406 8.2636 11.9999 8.2636C14.2358 8.2636 16.0547 10.1554 16.0547 12.4808C16.0547 14.806 14.2356 16.6977 11.9999 16.6977Z"
+                                fill="white"
+                            />
+                            <path
+                                d="M18.4435 4.17114C18.0333 4.17114 17.6303 4.34389 17.3405 4.64656C17.0494 4.94776 16.882 5.36707 16.882 5.79524C16.882 6.22208 17.0495 6.64124 17.3405 6.94392C17.6301 7.24511 18.0333 7.41933 18.4435 7.41933C18.8552 7.41933 19.2569 7.24511 19.548 6.94392C19.839 6.64124 20.0051 6.22193 20.0051 5.79524C20.0051 5.36707 19.839 4.94776 19.548 4.64656C19.2584 4.34389 18.8552 4.17114 18.4435 4.17114Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <a
+                class="footer-page__credits"
+                href="https://www.flaticon.com/br/icones-gratis/bandeiras"
+                title="bandeiras ícones"
                 >Bandeiras ícones criados por BW Designer - Flaticon</a
             >
         </footer>

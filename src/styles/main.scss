@@ -1,8 +1,12 @@
 //variables
 @import "utils/variables.scss";
+@import "utils/mixins.scss";
 
 //resets and global
 @import "common/reset.scss";
 @import "common/global.scss";
 
 //partials
+@import "partials/header.scss";
+@import "partials/home.scss";
+@import "partials/footer.scss";

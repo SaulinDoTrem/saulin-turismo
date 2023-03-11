@@ -1,0 +1,68 @@
+.header-page {
+    background-color: $black;
+    padding: 10px 0 12px;
+    flex-direction: column;
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        &__menu-mobile {
+            @include mq(xl, min) {
+                display: none;
+            }
+        }
+
+        &__page-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 58px 4px;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+
+            span {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: $white;
+            }
+        }
+
+        &__jalapeno-icon {
+            width: 51px;
+        }
+
+        &__mexico-icon {
+            width: 40px;
+        }
+
+        &__divider {
+            height: 1px;
+            background: $gray-100;
+        }
+
+        .nav {
+            margin: 13px 21px 0;
+
+            &__list {
+                display: flex;
+                list-style-type: none;
+            }
+
+            &__list-item {
+                margin-right: 20px;
+            }
+
+            &__list-link {
+                color: $white;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}
