@@ -16,25 +16,25 @@ export async function CoinChart() {
             success: function (responseData) {
                 removeData(chart);
 
-                const [labels, data] = handleWithData(responseData);
+                const [newLabels, newData] = handleWithData(responseData);
 
-                addData(chart, labels, data);
+                addData(chart, newLabels, newData);
             },
         });
     });
 
     function addData(chart, label, data) {
-        chart.data.labels.push(label);
+        chart.data.labels = label;
         chart.data.datasets.forEach((dataset) => {
-            dataset.data.push(data);
+            dataset.data = data;
         });
         chart.update();
     }
 
     function removeData(chart) {
-        chart.data.labels.pop();
+        chart.data.labels = [];
         chart.data.datasets.forEach((dataset) => {
-            dataset.data.pop();
+            dataset.data = [];
         });
         chart.update();
     }
