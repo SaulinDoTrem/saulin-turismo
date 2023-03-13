@@ -33,4 +33,19 @@ export function Header() {
     function underlineLink(position) {
         $(`#link${position}`).addClass("underline");
     }
+
+    MenuMobile();
+}
+
+function MenuMobile() {
+    $(".header-wrapper__menu-mobile").click(function () {
+        $(".menu-mobile").addClass("show");
+    });
+
+    function exitMenuMobile() {
+        $(".menu-mobile").removeClass("show");
+    }
+
+    $(".menu-mobile__exit-button").click(exitMenuMobile);
+    $(".menu-mobile__overlay").click(exitMenuMobile);
 }

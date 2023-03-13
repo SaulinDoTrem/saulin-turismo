@@ -11,12 +11,86 @@
             @include mq(xl, min) {
                 display: none;
             }
+
+            background-color: transparent;
+            border: none;
+        }
+
+        .menu-mobile {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.2s ease-in-out;
+
+            &.show {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            &__wrapper {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 68px;
+                z-index: 20;
+
+                .links-list {
+                    background-color: $white;
+                    padding: 20px 14px 40px;
+                    list-style-type: none;
+
+                    &__item {
+                        margin-bottom: 10px;
+                    }
+
+                    &__link {
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: $gray-100;
+                    }
+                }
+            }
+
+            &__overlay {
+                cursor: pointer;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(69, 69, 69, 0.7);
+                z-index: 15;
+            }
+
+            &__exit {
+                padding: 14px 18px;
+                background-color: $black;
+                display: flex;
+                justify-content: end;
+            }
+
+            &__exit-button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
         }
 
         &__page-info {
             display: flex;
             justify-content: space-between;
             margin: 0 58px 4px;
+
+            @include mq(xl, max) {
+                margin: 0 15px 4px;
+            }
         }
 
         &__info {
@@ -28,6 +102,15 @@
                 font-size: 24px;
                 line-height: 29px;
                 color: $white;
+
+                @include mq(xl, max) {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                @include mq(sm, max) {
+                    font-size: 13px;
+                }
             }
         }
 
@@ -42,10 +125,18 @@
         &__divider {
             height: 1px;
             background: $gray-100;
+
+            @include mq(xl, max) {
+                display: none;
+            }
         }
 
         .nav {
             margin: 13px 21px 0;
+
+            @include mq(xl, max) {
+                display: none;
+            }
 
             &__list {
                 display: flex;
