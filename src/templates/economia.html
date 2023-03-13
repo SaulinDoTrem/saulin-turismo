@@ -136,23 +136,34 @@
                 </figure>
             </section>
 
-            <section class="container">
-                <figure class="container__content">
-                    <img
-                        class="container__image"
-                        src="./assets/imgs/viva-a-vida-e-uma-festa.jpg"
-                        alt="Imagem do Filme Coco"
-                    />
+            <section class="container-chart container">
+                <form class="chart-form">
+                    <div>
+                        <p class="chart-form__real">1 Real brasileiro igual a</p>
+                        <h2 class="chart-form__peso">tanto Peso Mexicano</h2>
+                    </div>
 
-                    <figcaption class="container__text">
-                        Coco (Viva - A Vida É uma Festa) é um filme musical da Disney lançado em
-                        2017. Baseado em uma ideia original de Lee Unkrich, o longa-metragem animado
-                        é dirigido por Unkrich e codirigido por Adrian Molina. A história é sobre um
-                        garoto de 12 anos chamado Miguel Rivera que acidentalmente é transportado
-                        para o mundo dos mortos, onde procura pela ajuda de seu trisavô músico para
-                        que ele o leve de volta para a sua família no mundo dos vivos.
-                    </figcaption>
-                </figure>
+                    <div class="chart-form__input-wrapper">
+                        <label class="chart-form__label" for="chart-form__input"
+                            >Número de dias:</label
+                        >
+                        <input
+                            class="chart-form__input"
+                            id="chart-form__input"
+                            placeholder="0"
+                            required
+                            min="1"
+                            type="number"
+                            type="text"
+                        />
+                    </div>
+
+                    <button type="submit" class="chart-form__submit-button">Enviar</button>
+                </form>
+
+                <div class="container__chart">
+                    <canvas id="myChart"></canvas>
+                </div>
             </section>
 
             <section class="container">
@@ -264,5 +275,6 @@
             >
         </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./bundle.js"></script>
 </html>

@@ -1,0 +1,72 @@
+.container-chart {
+    display: flex;
+    margin: 0 149px;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include mq(xl, max) {
+        margin: 0 29px;
+    }
+
+    .chart-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 55px;
+
+        &__real {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__peso {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+
+        &__input-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        &__label {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 4px;
+        }
+
+        &__input {
+            all: unset;
+            border: 1px solid $black;
+            outline: 0;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        &__submit-button {
+            all: unset;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 10px 0;
+            background-color: $black;
+            color: $white;
+            text-align: center;
+
+            &:hover {
+                @include mq(xl, min) {
+                    background-color: $gray-500;
+                }
+            }
+
+            &:active {
+                background-color: $black;
+            }
+        }
+    }
+}
