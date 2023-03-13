@@ -5,6 +5,8 @@ export async function CoinChart() {
 
     const chart = buildChart(labels, data);
 
+    $(".chart-form__peso")[0].innerHTML = fixPrice(data[0]);
+
     $(".chart-form").submit(function (event) {
         event.preventDefault();
         const target = event.target;
@@ -97,5 +99,13 @@ export async function CoinChart() {
         const responseData = await response.json();
 
         return responseData;
+    }
+
+    function fixPrice(price) {
+        const part1 = price.toString().split(".");
+        const part2 = part1[1].split("");
+        const part3 = `${part2[0]}${part2[1]}`;
+
+        return `${part1[0]},${part3} Peso Mexicano`;
     }
 }
