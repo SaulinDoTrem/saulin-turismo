@@ -1,7 +1,7 @@
 import { ReturnTopButton } from "./components/returnTopButton";
-import { Header } from "./components/header";
+import { Header } from "./components/header.js";
 
-$(window).on("load", function () {
+$(window).ready(function () {
     ReturnTopButton();
     Header();
 });
